@@ -1,0 +1,79 @@
+<!-- list_item_student.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:background="@drawable/bgr_item"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_avatar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTuoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuổi: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewmsv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã sinh viên: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewtt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái: "
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgdelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_close_24"
+                />
+
+            <ImageView
+                android:id="@+id/imgupdate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:tint="#0DFB16"
+                android:src="@drawable/baseline_create_24"
+                tools:ignore="UseAppTint" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
